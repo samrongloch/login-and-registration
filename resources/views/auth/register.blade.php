@@ -52,6 +52,10 @@
                     </div>
 
                     <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+                    <h5 class="text-white mt-3">
+                        Do you wanna login?
+                        <a href="{{ route('login.show') }}" class="w-100 text-success mt-3" > Login!</a>
+                    </h5>
 
                     @include('auth.partials.copy')
                 </form>

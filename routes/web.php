@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -72,5 +73,14 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         Route::resource('roles', RolesController::class);
         Route::resource('permissions', PermissionsController::class);
+
+        /*
+        |--------------------------------------------------------------------------
+        | Web Routes
+        |--------------------------------------------------------------------------
+        */
+         Route::get('clients',[ClientController::class,'index'])->name('clients.index');
+         Route::get('clients/create',[ClientController::class,'create'])->name('clients.create');
+         Route::post('clients/store',[ClientController::class,'store'])->name('clients.store');
     });
 });
