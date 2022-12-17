@@ -24,6 +24,6 @@ class ClientController extends Controller
         if($request->hasFile('avatar') && $request->file('avatar')->isValid()){
             $client->addMediaFromRequest('avatar')->toMediaCollection('avatar');
         }
-        return redirect()->route('client');
+        return redirect()->route('clients.index');
     }
 }

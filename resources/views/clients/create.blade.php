@@ -9,10 +9,10 @@
 <body class="bg-info">
     <div class="container">
         <div class="d-flex p-2 bd-highlight mb-3">
-            <a href="{{ route('client') }}" class="btn btn-outline-danger btn-sm">Go Back</a>
+            <a href="{{ route('clients.index') }}" class="btn btn-outline-danger btn-sm">Go Back</a>
         </div>
         <div>
-            <form action="{{ route('client.store') }}" enctype="multipart/form-data" method="post">
+            <form action="{{ route('clients.store') }}" enctype="multipart/form-data" method="post">
                 @csrf
                 <div class="mb-3">
                     <label>Name</label>
