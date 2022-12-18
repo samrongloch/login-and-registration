@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EmpController;
 use App\Http\Controllers\ClientController;
 
 /*
@@ -82,5 +83,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
          Route::get('clients',[ClientController::class,'index'])->name('clients.index');
          Route::get('clients/create',[ClientController::class,'create'])->name('clients.create');
          Route::post('clients/store',[ClientController::class,'store'])->name('clients.store');
+
+         // Employee
+
+         Route::get('employee',[EmpController::class , 'index'])->name('employee.index');
     });
 });

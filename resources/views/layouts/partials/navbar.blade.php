@@ -14,6 +14,7 @@
             @endrole
             <li><a href="{{ route('posts.index') }}" class="nav-link px-2 text-white">Posts</a></li>
             <li><a href="{{ route('clients.index') }}" class="nav-link px-2 text-white">Clients</a></li>
+            <li><a href="{{ route('employee.index') }}" class="nav-link px-2 text-white">Employee</a></li>
           @endauth
         </ul>
 
