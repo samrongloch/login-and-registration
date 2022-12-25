@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Integrate Spatie Medialibrary in Laravel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+@extends('layouts.app-master')
+
+@section('content')
     <div class="container">
         <div class="d-flex p-2 bd-highlight mb-3">
             <a href="{{ route('client.create') }}" class="btn btn-dark">Add</a>
@@ -31,6 +25,6 @@
                 @endforeach
             </tbody>
         </table>
+        <a href="#">facebook</a>
     </div>
-</body>
-</html>
+@endsection
