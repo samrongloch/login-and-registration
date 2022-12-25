@@ -15,14 +15,16 @@
 - $ cp .env.example .env
 - $ php artisan key:generate
 
-## Learning Laravel
+## ចូលទៅកាន់ file .env (បើក file .env) ដើម្បីដាក់ឈ្មោះ Database
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+យើងត្រូវតែប្រាកដថា មានឈ្មោះ database ដែលបានបង្កើតរួចហើយក្នុង phpMyAdmin (localhost/phpmyadmin)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=laravel9lv
+- DB_USERNAME=root
+- DB_PASSWORD=
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
