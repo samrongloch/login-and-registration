@@ -2,13 +2,13 @@
 
 @section('content')
 
-    <h1 class="mb-3">Laravel 8 User Roles and Permissions Step by Step Tutorial - codeanddeploy.com</h1>
+    <h1 class="mb-3" style="color: purple">Laravel9: Please Add Post</h1>
 
-    <div class="bg-light p-4 rounded">
+    <div class="bg-info p-4 rounded">
         <h2>Posts</h2>
         <div class="lead">
-            Manage your posts here.
-            <a href="{{ route('posts.create') }}" class="btn btn-primary btn-sm float-right">Add post</a>
+            <h5 style="color: red">Manage your posts here.</h5>
+            <a href="{{ route('posts.create') }}" class="btn btn-warning btn-sm float-right">Add post</a>
         </div>
 
         <div class="mt-2">
@@ -26,7 +26,7 @@
                 <td>{{ $post->id }}</td>
                 <td>{{ $post->title }}</td>
                 <td>
-                    <a class="btn btn-info btn-sm" href="{{ route('posts.show', $post->id) }}">Show</a>
+                    <a class="btn btn-success btn-sm" href="{{ route('posts.show', $post->id) }}">Show</a>
                 </td>
                 <td>
                     <a class="btn btn-primary btn-sm" href="{{ route('posts.edit', $post->id) }}">Edit</a>

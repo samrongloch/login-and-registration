@@ -1,15 +1,15 @@
 @extends('layouts.auth-master')
 
 @section('content')
-    <div class="bg-dark" style="width: 500px;height: auto;margin: auto;border-radius: 7px;">
+    <div class="bg-warning" style="width: 500px;height: auto;margin: auto;border-radius: 7px;">
         <div class="row-sm-10 d-flex justify-content-center">
             <div class="col-sm-10">
                 <form method="post" action="{{ route('register.perform') }}">
 
                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <img class="mb-1 mt-3" src="{{ asset('image/Capture.JPG') }}" alt="" width="72" height="72" style="border-radius: 50%;">
+                    <img class="mb-1 mt-3" src="{{ asset('image/laravel-image.png') }}" alt="" width="72" height="72" style="border-radius: 50%;">
 
-                    <h1 class="h3 mb-3 fw-normal">Register</h1>
+                    <h1 class="h3 mb-3 fw-normal">Please Register</h1>
 
                     <div class="form-group form-floating mb-3">
                         <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="name" required="required" autofocus>

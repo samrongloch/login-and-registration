@@ -2,15 +2,15 @@
 
 @section('content')
 
-<div class="bg-dark mt-5 p-3" style="width: 500px;height: auto;margin: auto;border-radius: 15px;">
+<div class="bg-warning mt-5 p-3" style="width: 500px;height: auto;margin: auto;border-radius: 15px;">
     <div class="row-sm-10 d-flex justify-content-center">
         <div class="col-sm-10">
             <form method="post" action="{{ route('login.perform') }}">
 
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <img class="mb-2 mt-3" src="{{ asset('image/Capture.JPG') }}" alt="" width="72" height="72" style="border-radius: 50%">
+                <img class="mb-2 mt-3" src="{{ asset('image/laravel-image.png') }}" alt="" width="80" height="80" style="border-radius: 50%">
 
-                <h1 class="h3 mb-3 fw-normal">Login</h1>
+                <h1 class="h3 mb-3 fw-normal">Please Login</h1>
 
                 @include('layouts.partials.messages')
 
