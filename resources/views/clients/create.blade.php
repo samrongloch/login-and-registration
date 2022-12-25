@@ -9,17 +9,10 @@
 <body class="bg-info">
     <div class="container">
         <div class="d-flex p-2 bd-highlight mb-3">
-<<<<<<< HEAD
             <a href="{{ route('client') }}" class="btn btn-outline-danger btn-sm">Go Back</a>
         </div>
         <div>
             <form action="{{ route('client.store') }}" enctype="multipart/form-data" method="post">
-=======
-            <a href="{{ route('clients.index') }}" class="btn btn-outline-danger btn-sm">Go Back</a>
-        </div>
-        <div>
-            <form action="{{ route('clients.store') }}" enctype="multipart/form-data" method="post">
->>>>>>> 3a87cf1ab192c0e5950167c2811b33d62e899b68
                 @csrf
                 <div class="mb-3">
                     <label>Name</label>

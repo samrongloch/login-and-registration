@@ -1,10 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
-=======
 use App\Http\Controllers\EmpController;
->>>>>>> 3a87cf1ab192c0e5950167c2811b33d62e899b68
 use App\Http\Controllers\ClientController;
 
 /*

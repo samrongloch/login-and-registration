@@ -8,18 +8,12 @@
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="{{ route('home.index') }}" class="btn btn-danger me-2" style="margin-left: 10px;">Home</a></li>
           @auth
-            @role('Admin')
+            @role('admin')
             <li><a href="{{ route('users.index') }}" class="nav-link px-2 text-white">Users</a></li>
             <li><a href="{{ route('roles.index') }}" class="nav-link px-2 text-white">Roles</a></li>
             @endrole
-<<<<<<< HEAD
             <li><a href="{{ route('posts.index') }}" class="btn btn-success me-2" style="margin-left: 10px;">Posts</a></li>
             <li><a href="{{ route('client') }}" class="btn btn-warning me-2" style="margin-left: 10px;">Clients</a></li>
-=======
-            <li><a href="{{ route('posts.index') }}" class="nav-link px-2 text-white">Posts</a></li>
-            <li><a href="{{ route('clients.index') }}" class="nav-link px-2 text-white">Clients</a></li>
-            <li><a href="{{ route('employee.index') }}" class="nav-link px-2 text-white">Employee</a></li>
->>>>>>> 3a87cf1ab192c0e5950167c2811b33d62e899b68
           @endauth
         </ul>
 
