@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
+=======
+use App\Http\Controllers\EmpController;
+>>>>>>> 3a87cf1ab192c0e5950167c2811b33d62e899b68
 use App\Http\Controllers\ClientController;
 
 /*
@@ -78,5 +82,18 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 
         Route::resource('roles', RolesController::class);
         Route::resource('permissions', PermissionsController::class);
+
+        /*
+        |--------------------------------------------------------------------------
+        | Web Routes
+        |--------------------------------------------------------------------------
+        */
+         Route::get('clients',[ClientController::class,'index'])->name('clients.index');
+         Route::get('clients/create',[ClientController::class,'create'])->name('clients.create');
+         Route::post('clients/store',[ClientController::class,'store'])->name('clients.store');
+
+         // Employee
+
+         Route::get('employee',[EmpController::class , 'index'])->name('employee.index');
     });
 });
