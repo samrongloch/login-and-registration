@@ -25,9 +25,9 @@
 - DB_DATABASE=laravel9lv
 - DB_USERNAME=root
 - DB_PASSWORD=
-## Laravel Sponsors
+## ដោយយើងប្រើប្រាស់រូបភាពជាមួយ MediaLibrary យើងត្រូវប្រើ command
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- $ php artisan storage:link
 
 ### Premium Partners
 
